@@ -1,0 +1,12 @@
+C:\Quanlynhapthuoc\Quanlynhapthuoc\bin\Debug\Quanlynhapthuoc.exe.config
+C:\Quanlynhapthuoc\Quanlynhapthuoc\bin\Debug\Quanlynhapthuoc.exe
+C:\Quanlynhapthuoc\Quanlynhapthuoc\bin\Debug\Quanlynhapthuoc.pdb
+C:\Quanlynhapthuoc\Quanlynhapthuoc\bin\Debug\Guna.UI2.dll
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.csproj.AssemblyReference.cache
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.Form1.resources
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.Properties.Resources.resources
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.csproj.GenerateResource.cache
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.csproj.CoreCompileInputs.cache
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.csproj.CopyComplete
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.exe
+C:\Quanlynhapthuoc\Quanlynhapthuoc\obj\Debug\Quanlynhapthuoc.pdb
