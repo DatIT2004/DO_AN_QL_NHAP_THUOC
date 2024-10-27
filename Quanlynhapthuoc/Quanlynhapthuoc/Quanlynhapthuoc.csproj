@@ -52,6 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\KNCSDL.cs" />
+    <Compile Include="DAO\QLThuoc.cs" />
+    <Compile Include="frm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Admin.Designer.cs">
+      <DependentUpon>frm_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,13 +72,34 @@
     <Compile Include="frm_Thuoc.Designer.cs">
       <DependentUpon>frm_Thuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="NguoiQL\UCNhanvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NguoiQL\UCNhanvien.Designer.cs">
+      <DependentUpon>UCNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NguoiQL\UCThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NguoiQL\UCThuoc.Designer.cs">
+      <DependentUpon>UCThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Admin.resx">
+      <DependentUpon>frm_Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_dangnhap.resx">
       <DependentUpon>frm_dangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Thuoc.resx">
       <DependentUpon>frm_Thuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguoiQL\UCNhanvien.resx">
+      <DependentUpon>UCNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguoiQL\UCThuoc.resx">
+      <DependentUpon>UCThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
