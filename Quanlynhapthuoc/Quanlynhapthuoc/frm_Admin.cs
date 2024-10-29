@@ -33,6 +33,8 @@ namespace Quanlynhapthuoc
                 guilabelTenDN.Text = frm_dangnhap.tendangnhap;
                 ucNhanvien1.Visible = false;
                 ucThuoc1.Visible = false;
+                buThuoc.PerformClick();
+                
             }
         }
 
@@ -41,15 +43,14 @@ namespace Quanlynhapthuoc
             
             ucNhanvien1.Visible = true;
             ucNhanvien1.BringToFront();
-            ucThuoc1.Visible = false;
+            
         }
 
         private void buThuoc_Click(object sender, EventArgs e)
         {
-            
+
             ucThuoc1.Visible = true;
             ucThuoc1.BringToFront();
-            ucNhanvien1.Visible = false;
         }
 
         private void buNhaCap_Click(object sender, EventArgs e)

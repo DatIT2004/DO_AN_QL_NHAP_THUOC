@@ -39,6 +39,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ucNhanvien1 = new Quanlynhapthuoc.NguoiQL.UCNhanvien();
+            this.ucThuoc1 = new Quanlynhapthuoc.NguoiQL.UCThuoc();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -201,6 +202,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.ucThuoc1);
             this.panel1.Controls.Add(this.ucNhanvien1);
             this.panel1.Location = new System.Drawing.Point(330, 0);
             this.panel1.Name = "panel1";
@@ -213,6 +215,13 @@
             this.ucNhanvien1.Name = "ucNhanvien1";
             this.ucNhanvien1.Size = new System.Drawing.Size(1689, 1070);
             this.ucNhanvien1.TabIndex = 0;
+            // 
+            // ucThuoc1
+            // 
+            this.ucThuoc1.Location = new System.Drawing.Point(-13, 0);
+            this.ucThuoc1.Name = "ucThuoc1";
+            this.ucThuoc1.Size = new System.Drawing.Size(1797, 1070);
+            this.ucThuoc1.TabIndex = 1;
             // 
             // frm_Admin
             // 
@@ -247,5 +256,6 @@
         private Guna.UI2.WinForms.Guna2Button buDoimk;
         private System.Windows.Forms.Panel panel1;
         private NguoiQL.UCNhanvien ucNhanvien1;
+        private NguoiQL.UCThuoc ucThuoc1;
     }
 }
