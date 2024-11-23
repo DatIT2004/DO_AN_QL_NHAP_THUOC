@@ -21,7 +21,7 @@ namespace Quanlynhapthuoc
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+           
         }
         public static string loaitk;
         public static string tendangnhap;
@@ -52,6 +52,11 @@ namespace Quanlynhapthuoc
         {
             txtMatkhau.UseSystemPasswordChar =!txtMatkhau.UseSystemPasswordChar;
             txtMatkhau.PasswordChar = (char)0;
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

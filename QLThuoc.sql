@@ -149,3 +149,12 @@ INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK001',
 INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK002', 'nhanvien','123456', 'nhanvien','QL003');
  
  select*from NguoiDung where TenDangnhap='nguoiquanly ' and Matkhau='123456'
+ select*from Thuoc
+ select a.Ma_Thuoc,Ten_Thuoc,Ten_Nha_Cung_Cap,Ten_Thuoc,Cong_Dung,Ten_Hang from Thuoc a,Nha_Cung_Cap b,Loai_Thuoc c,Hang_SX d 
+ where a.Ma_Nha_Cung_Cap=b.Ma_Nha_Cung_Cap and a.Ma_Loai_Thuoc=c.Ma_Loai_Thuoc and a.Ma_Hang_SX=d.Ma_Hang_SX
+ update Thuoc set Ten_Thuoc='ghghjfj',Ma_Nha_Cung_Cap='NC003',Ma_Loai_Thuoc='LT003',Cong_Dung='efjhdj',Ma_Hang_SX='SX003'where Ma_Thuoc='TH011'
+ delete from Thuoc where Ma_Thuoc='TH012'
+select*from Nguoi_QL_Kho where Ho_Ten
+select*from NguoiDung
+select Ma_Nguoi_QL,Ho_Ten,Ngay_Sinh,SDT,TenDangnhap,Matkhau from Nguoi_QL_Kho a,NguoiDung b where a.Ma_Nguoi_QL=b.MaNguoiQL
+select top 1 MaTK from NguoiDung order by MaTK desc

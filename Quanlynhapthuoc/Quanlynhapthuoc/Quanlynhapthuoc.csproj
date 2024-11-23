@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\KNCSDL.cs" />
+    <Compile Include="DAO\QLMK.cs" />
+    <Compile Include="DAO\QLNV.cs" />
     <Compile Include="DAO\QLThuoc.cs" />
     <Compile Include="frm_Admin.cs">
       <SubType>Form</SubType>
@@ -86,6 +88,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Hienthi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Hienthi.Designer.cs">
+      <DependentUpon>UC_Hienthi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Matkhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Matkhau.Designer.cs">
+      <DependentUpon>UC_Matkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NHACUNGCAP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NHACUNGCAP.Designer.cs">
+      <DependentUpon>UC_NHACUNGCAP.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Admin.resx">
       <DependentUpon>frm_Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +130,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_Hienthi.resx">
+      <DependentUpon>UC_Hienthi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Matkhau.resx">
+      <DependentUpon>UC_Matkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NHACUNGCAP.resx">
+      <DependentUpon>UC_NHACUNGCAP.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
