@@ -38,10 +38,18 @@ namespace Quanlynhapthuoc
             {
                 loaitk = dt.Rows[0][3].ToString();
                 tendangnhap = dt.Rows[0][1].ToString();
-                if (dt.Rows[0][3].ToString()=="nguoiql")
+                if (loaitk == "nguoiql")
                 {
                     frm_Admin f2 = new frm_Admin();
                     f2.Show();
+                    txtTen.Text = "";
+                    txtMatkhau.Text = "";
+                }
+
+                if(loaitk == "nhanvien")
+                {
+                    frm_NhanVienQLKho f = new frm_NhanVienQLKho();
+                    f.Show();
                     txtTen.Text = "";
                     txtMatkhau.Text = "";
                 }

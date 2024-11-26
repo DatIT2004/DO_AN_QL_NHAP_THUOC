@@ -42,8 +42,8 @@ namespace Quanlynhapthuoc
 
         private void UC_Matkhau_Load(object sender, EventArgs e)
         {
-            cbLoai.Items.Add("nhanvien");
-            cbLoai.Items.Add("nguoiql");
+            cbLoai.Items.Add("Quản Trị Viên");
+            cbLoai.Items.Add("Người Quản Lý Kho");
             Hiengriv();
             Combox();
         }
@@ -104,6 +104,11 @@ namespace Quanlynhapthuoc
                 QLMK.Xoamk(txtMatk.Text);
             }
             Hiengriv();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

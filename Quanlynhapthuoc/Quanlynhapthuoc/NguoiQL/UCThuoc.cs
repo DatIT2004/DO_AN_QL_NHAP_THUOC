@@ -53,6 +53,12 @@ namespace Quanlynhapthuoc.NguoiQL
             HiencbNcc();
             HiencbLoai();
             HiencbNSX();
+            if(frm_dangnhap.loaitk == "nhanvien")
+            {
+                buXoathuoc.Enabled = false;
+                buSuathuoc.Enabled = false;
+            }
+            
         }
 
 

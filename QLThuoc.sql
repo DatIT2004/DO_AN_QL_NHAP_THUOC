@@ -146,7 +146,7 @@ INSERT INTO CT_Phieu_Nhap (Ma_PN, Ma_Thuoc, SL, Don_Gia)VALUES ('PN009', 'TH009'
 INSERT INTO CT_Phieu_Nhap (Ma_PN, Ma_Thuoc, SL, Don_Gia)VALUES ('PN010', 'TH010', 170, 17000);
 
 INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK001', 'nguoiquanly','123456', 'nguoiql',null);
-INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK002', 'nhanvien','123456', 'nhanvien','QL003');
+INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK002', 'nhanvienquanly','123456', 'nhanvien','QL003');
  
  select*from NguoiDung where TenDangnhap='nguoiquanly ' and Matkhau='123456'
  select*from Thuoc
@@ -154,7 +154,8 @@ INSERT INTO NguoiDung(MaTK,TenDangnhap,Matkhau,LoaiTK,MaNguoiQL)VALUES ('TK002',
  where a.Ma_Nha_Cung_Cap=b.Ma_Nha_Cung_Cap and a.Ma_Loai_Thuoc=c.Ma_Loai_Thuoc and a.Ma_Hang_SX=d.Ma_Hang_SX
  update Thuoc set Ten_Thuoc='ghghjfj',Ma_Nha_Cung_Cap='NC003',Ma_Loai_Thuoc='LT003',Cong_Dung='efjhdj',Ma_Hang_SX='SX003'where Ma_Thuoc='TH011'
  delete from Thuoc where Ma_Thuoc='TH012'
-select*from Nguoi_QL_Kho where Ho_Ten
+select*from Nguoi_QL_Kho
 select*from NguoiDung
 select Ma_Nguoi_QL,Ho_Ten,Ngay_Sinh,SDT,TenDangnhap,Matkhau from Nguoi_QL_Kho a,NguoiDung b where a.Ma_Nguoi_QL=b.MaNguoiQL
 select top 1 MaTK from NguoiDung order by MaTK desc
+update NguoiDung set TenDangnhap='nhanvienquanly' where MaTK = 'TK002'

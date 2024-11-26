@@ -237,6 +237,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_NHACUNGCAP";
             this.Size = new System.Drawing.Size(1030, 621);
+            this.Load += new System.EventHandler(this.UC_NHACUNGCAP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDanhsachNCC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();

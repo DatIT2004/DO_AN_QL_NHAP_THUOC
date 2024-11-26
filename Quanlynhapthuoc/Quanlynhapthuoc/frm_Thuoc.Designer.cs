@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "frm_Thuoc";
             this.Text = "frm_Thuoc";
+            this.Load += new System.EventHandler(this.frm_Thuoc_Load);
             this.ResumeLayout(false);
 
         }

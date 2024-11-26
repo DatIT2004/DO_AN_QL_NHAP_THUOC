@@ -16,5 +16,10 @@ namespace Quanlynhapthuoc
         {
             InitializeComponent();
         }
+
+        private void UC_NHACUNGCAP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

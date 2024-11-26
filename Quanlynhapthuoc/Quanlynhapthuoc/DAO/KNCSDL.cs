@@ -17,7 +17,7 @@ namespace Quanlynhapthuoc.DAO
         {
             try
             {
-                string sqlcon = @"Data Source=LAPTOP-28GGK1F8\SQLEXPRESS;Initial Catalog=QL_NHAP_THUOC;Integrated Security=True";
+                string sqlcon = @"Data Source=DESKTOP-9TCL0NI\SQLEXPRESS;Initial Catalog=QL_NHAP_THUOC;Integrated Security=True";
                 cnn.ConnectionString = sqlcon;
                 if(cnn.State==ConnectionState.Closed)
                 {

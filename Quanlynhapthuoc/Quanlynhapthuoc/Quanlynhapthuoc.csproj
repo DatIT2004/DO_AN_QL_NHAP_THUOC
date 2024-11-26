@@ -68,6 +68,12 @@
     <Compile Include="frm_dangnhap.Designer.cs">
       <DependentUpon>frm_dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_NhanVienQLKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NhanVienQLKho.Designer.cs">
+      <DependentUpon>frm_NhanVienQLKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Thuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="NguoiQL\UCThuoc.Designer.cs">
       <DependentUpon>UCThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NV_QL_KHO\UCThuoc_NV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NV_QL_KHO\UCThuoc_NV.Designer.cs">
+      <DependentUpon>UCThuoc_NV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +124,9 @@
     <EmbeddedResource Include="frm_dangnhap.resx">
       <DependentUpon>frm_dangnhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_NhanVienQLKho.resx">
+      <DependentUpon>frm_NhanVienQLKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Thuoc.resx">
       <DependentUpon>frm_Thuoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NguoiQL\UCThuoc.resx">
       <DependentUpon>UCThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NV_QL_KHO\UCThuoc_NV.resx">
+      <DependentUpon>UCThuoc_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,5 +171,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

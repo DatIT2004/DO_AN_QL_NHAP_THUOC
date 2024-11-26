@@ -16,5 +16,10 @@ namespace Quanlynhapthuoc
         {
             InitializeComponent();
         }
+
+        private void frm_Thuoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

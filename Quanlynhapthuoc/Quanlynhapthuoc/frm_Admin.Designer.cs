@@ -38,11 +38,11 @@
             this.buThuoc = new Guna.UI2.WinForms.Guna2Button();
             this.guilabelTenDN = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ucThuoc1 = new Quanlynhapthuoc.NguoiQL.UCThuoc();
-            this.ucNhanvien1 = new Quanlynhapthuoc.NguoiQL.UCNhanvien();
-            this.uC_NHACUNGCAP1 = new Quanlynhapthuoc.UC_NHACUNGCAP();
-            this.uC_Matkhau1 = new Quanlynhapthuoc.UC_Matkhau();
             this.uC_Hienthi1 = new Quanlynhapthuoc.UC_Hienthi();
+            this.uC_Matkhau1 = new Quanlynhapthuoc.UC_Matkhau();
+            this.uC_NHACUNGCAP1 = new Quanlynhapthuoc.UC_NHACUNGCAP();
+            this.ucNhanvien1 = new Quanlynhapthuoc.NguoiQL.UCNhanvien();
+            this.ucThuoc1 = new Quanlynhapthuoc.NguoiQL.UCThuoc();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(242, 759);
             this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // panel1
             // 
@@ -69,6 +70,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1030, 621);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buLogout
             // 
@@ -189,15 +191,16 @@
             // 
             this.guilabelTenDN.AutoSize = false;
             this.guilabelTenDN.BackColor = System.Drawing.Color.Transparent;
-            this.guilabelTenDN.Font = new System.Drawing.Font("Lucida Handwriting", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guilabelTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guilabelTenDN.ForeColor = System.Drawing.Color.White;
-            this.guilabelTenDN.Location = new System.Drawing.Point(-6, 211);
+            this.guilabelTenDN.Location = new System.Drawing.Point(33, 189);
             this.guilabelTenDN.Name = "guilabelTenDN";
-            this.guilabelTenDN.Size = new System.Drawing.Size(269, 54);
+            this.guilabelTenDN.Size = new System.Drawing.Size(245, 54);
             this.guilabelTenDN.TabIndex = 1;
-            this.guilabelTenDN.Text = "Admin";
+            this.guilabelTenDN.Text = ".";
             this.guilabelTenDN.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.guilabelTenDN.UseSystemCursors = true;
+            this.guilabelTenDN.Click += new System.EventHandler(this.guilabelTenDN_Click);
             // 
             // guna2PictureBox1
             // 
@@ -209,27 +212,16 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // ucThuoc1
+            // uC_Hienthi1
             // 
-            this.ucThuoc1.Location = new System.Drawing.Point(239, 0);
-            this.ucThuoc1.Name = "ucThuoc1";
-            this.ucThuoc1.Size = new System.Drawing.Size(1030, 621);
-            this.ucThuoc1.TabIndex = 1;
-            // 
-            // ucNhanvien1
-            // 
-            this.ucNhanvien1.Location = new System.Drawing.Point(239, 0);
-            this.ucNhanvien1.Name = "ucNhanvien1";
-            this.ucNhanvien1.Size = new System.Drawing.Size(1030, 621);
-            this.ucNhanvien1.TabIndex = 2;
-            // 
-            // uC_NHACUNGCAP1
-            // 
-            this.uC_NHACUNGCAP1.Location = new System.Drawing.Point(239, 0);
-            this.uC_NHACUNGCAP1.Name = "uC_NHACUNGCAP1";
-            this.uC_NHACUNGCAP1.Size = new System.Drawing.Size(1030, 621);
-            this.uC_NHACUNGCAP1.TabIndex = 3;
+            this.uC_Hienthi1.BackColor = System.Drawing.Color.White;
+            this.uC_Hienthi1.Location = new System.Drawing.Point(242, 0);
+            this.uC_Hienthi1.Name = "uC_Hienthi1";
+            this.uC_Hienthi1.Size = new System.Drawing.Size(1030, 621);
+            this.uC_Hienthi1.TabIndex = 5;
+            this.uC_Hienthi1.Load += new System.EventHandler(this.uC_Hienthi1_Load);
             // 
             // uC_Matkhau1
             // 
@@ -237,14 +229,31 @@
             this.uC_Matkhau1.Name = "uC_Matkhau1";
             this.uC_Matkhau1.Size = new System.Drawing.Size(1030, 621);
             this.uC_Matkhau1.TabIndex = 4;
+            this.uC_Matkhau1.Load += new System.EventHandler(this.uC_Matkhau1_Load);
             // 
-            // uC_Hienthi1
+            // uC_NHACUNGCAP1
             // 
-            this.uC_Hienthi1.BackColor = System.Drawing.Color.White;
-            this.uC_Hienthi1.Location = new System.Drawing.Point(239, 0);
-            this.uC_Hienthi1.Name = "uC_Hienthi1";
-            this.uC_Hienthi1.Size = new System.Drawing.Size(1030, 621);
-            this.uC_Hienthi1.TabIndex = 5;
+            this.uC_NHACUNGCAP1.Location = new System.Drawing.Point(239, 0);
+            this.uC_NHACUNGCAP1.Name = "uC_NHACUNGCAP1";
+            this.uC_NHACUNGCAP1.Size = new System.Drawing.Size(1030, 621);
+            this.uC_NHACUNGCAP1.TabIndex = 3;
+            this.uC_NHACUNGCAP1.Load += new System.EventHandler(this.uC_NHACUNGCAP1_Load);
+            // 
+            // ucNhanvien1
+            // 
+            this.ucNhanvien1.Location = new System.Drawing.Point(239, 0);
+            this.ucNhanvien1.Name = "ucNhanvien1";
+            this.ucNhanvien1.Size = new System.Drawing.Size(1030, 621);
+            this.ucNhanvien1.TabIndex = 2;
+            this.ucNhanvien1.Load += new System.EventHandler(this.ucNhanvien1_Load);
+            // 
+            // ucThuoc1
+            // 
+            this.ucThuoc1.Location = new System.Drawing.Point(239, 0);
+            this.ucThuoc1.Name = "ucThuoc1";
+            this.ucThuoc1.Size = new System.Drawing.Size(1030, 621);
+            this.ucThuoc1.TabIndex = 1;
+            this.ucThuoc1.Load += new System.EventHandler(this.ucThuoc1_Load);
             // 
             // frm_Admin
             // 
